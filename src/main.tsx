@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 
 import './index.css';
 
-import { Layout } from './layout/Menu/Menu.tsx';
+import { Layout } from './layout/Menu/Layout.tsx';
 
 import { Menu } from './pages/Menu/Menu.tsx';
 import { Cart } from './pages/Cart/Cart.tsx';
