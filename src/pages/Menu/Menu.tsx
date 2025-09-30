@@ -4,7 +4,7 @@ import Headling from '../../components/Headling/Headling';
 import Search from '../../components/Search/Search';
 import ProductCard from '../../components/ProductCard/ProductCard';
 
-export function Menu() {
+function Menu() {
 	return (
 		<>
 			<div className={styles['head']}>
@@ -24,3 +24,5 @@ export function Menu() {
 		</>
 	);
 }
+
+export default Menu;

@@ -1,8 +1,9 @@
-
-export function Cart() {
+function Cart() {
 	return (
 		<>
 			Cart
 		</>
 	);
 }
+
+export default Cart;

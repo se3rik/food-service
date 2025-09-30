@@ -6,9 +6,10 @@ import './index.css';
 
 import { Layout } from './layout/Menu/Layout.tsx';
 
-import { Menu } from './pages/Menu/Menu.tsx';
-import { Cart } from './pages/Cart/Cart.tsx';
-import { NotFound } from './pages/NotFound/NotFound.tsx';
+import Menu from './pages/Menu/Menu.tsx';
+import Cart from './pages/Cart/Cart.tsx';
+import NotFound from './pages/NotFound/NotFound.tsx';
+import Product from './pages/Product/Product.tsx';
 
 const root = document.getElementById('root');
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
 			{
 				path: '/cart',
 				element: <Cart />
+			},
+			{
+				path: '/product/:id',
+				element: <Product />
 			}
 		]
 	},
