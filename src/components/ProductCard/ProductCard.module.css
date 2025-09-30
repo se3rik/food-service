@@ -13,6 +13,8 @@
 	position: relative;
 	min-height: 165px;
 	border-radius: 19px;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .price {
