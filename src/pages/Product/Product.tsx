@@ -1,13 +1,14 @@
-import { useParams } from 'react-router';
+import { useLoaderData } from 'react-router';
+import type { Product } from '../../interfaces/product.interface';
 
 function Product() {
-	const { id } = useParams();
+	const data = useLoaderData() as Product;
 
 	return (
 		<>
-			Product - {id}
+			Product - {data.name}
 		</>
 	);
 }
 
-export default Product;
+export default Product as React.FC;

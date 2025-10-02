@@ -22,7 +22,7 @@ function Menu() {
 			await new Promise<void>((resolve) => {
 				setTimeout(() => {
 					resolve();
-				}, 2000);
+				}, 1000);
 			});
 			const { data } = await axios.get<Product[]>(`${BASE_URL}/products`);
 			setProducts(data);
