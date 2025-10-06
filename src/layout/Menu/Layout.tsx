@@ -4,7 +4,7 @@ import cn from 'classnames';
 import styles from './Layout.module.css';
 import Button from '../../components/Button/Button';
 
-export function Layout() {
+function Layout() {
 
 	return (
 		<div className={styles['layout']}>
@@ -43,3 +43,5 @@ export function Layout() {
 		</div>
 	);
 }
+
+export default Layout;
