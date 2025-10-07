@@ -1,9 +1,12 @@
 import { lazy, StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router';
+import { Provider } from 'react-redux';
 import axios from 'axios';
 
 import './index.css';
+
+import { store } from './store/store.ts';
 
 import Layout from './layout/Menu/Layout.tsx';
 import AuthLayout from './layout/Auth/AuthLayout.tsx';
@@ -72,6 +75,8 @@ const router = createBrowserRouter([
 
 createRoot(root!).render(
 	<StrictMode>
-		<RouterProvider router={router} />
+		<Provider store={store}>
+			<RouterProvider router={router} />
+		</Provider>
 	</StrictMode>
 );
