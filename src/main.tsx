@@ -15,6 +15,7 @@ import Login from './pages/Login/Login.tsx';
 import Registration from './pages/Registration/Registration.tsx';
 
 import { BASE_URL } from './helpers/API.ts';
+import RequireAuth from './helpers/RequireAuth.tsx';
 
 const root = document.getElementById('root');
 
@@ -23,7 +24,7 @@ const Menu = lazy(() => import('./pages/Menu/Menu'));
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Layout />,
+		element: <RequireAuth><Layout /></RequireAuth>,
 		children: [
 			{
 				path: '/',
